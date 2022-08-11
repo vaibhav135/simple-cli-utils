@@ -1,5 +1,4 @@
 # syntax=docker/dockerfile:1
-
 FROM golang:1.16-alpine
 
 WORKDIR /app
@@ -11,6 +10,6 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /simple-cli-utils
+RUN go build -o /bin/simple-cli-utils
 
-CMD [ "/simple-cli-utils" ]
+CMD [ "./bin/simple-cli-utils" ]

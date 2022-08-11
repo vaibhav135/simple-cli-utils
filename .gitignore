@@ -13,5 +13,10 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
 # env files
-./config/local.env
+*.env
+local.env
+
+# binaries
+./bin
